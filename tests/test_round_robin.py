@@ -14,7 +14,6 @@ def test_every_pair_plays_twice_in_double_round():
         key = frozenset([m.home, m.away])
         pair_counts[key] = pair_counts.get(key, 0) + 1
 
-    # 4 teams -> 6 unique pairs, each should appear exactly twice
     assert len(pair_counts) == 6
     assert all(count == 2 for count in pair_counts.values())
 
@@ -29,21 +28,18 @@ def test_no_team_plays_itself():
 def test_odd_number_of_teams_handles_bye():
     teams = ["A", "B", "C"]
     schedule = generate_round_robin(teams, double_round=False)
-    # 3 teams, single round robin -> 3 games total
     assert len(schedule) == 3
 
 
 def test_total_game_count_single_round():
     teams = ["A", "B", "C", "D", "E", "F"]
     schedule = generate_round_robin(teams, double_round=False)
-    # n*(n-1)/2 games in a single round robin
     assert len(schedule) == 15
 
 
 def test_total_game_count_double_round():
     teams = ["A", "B", "C", "D", "E", "F"]
     schedule = generate_round_robin(teams, double_round=True)
-    # n*(n-1) games in a double round robin
     assert len(schedule) == 30
 
 

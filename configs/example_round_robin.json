@@ -1,0 +1,12 @@
+{
+  "mode": "round_robin",
+  "teams": ["Warriors", "Lakers", "Celtics", "Bulls", "Nets", "Heat"],
+  "double_round": true,
+  "constraints": {
+    "season_days": 60,
+    "max_consecutive_away": 2,
+    "max_consecutive_home": 3,
+    "min_rest_days": 1
+  },
+  "optimize": false
+}

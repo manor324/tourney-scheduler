@@ -1,0 +1,36 @@
+{
+  "mode": "weighted",
+  "teams": [
+    {"name": "Golden State Warriors", "conference": "West", "division": "Pacific"},
+    {"name": "Los Angeles Lakers", "conference": "West", "division": "Pacific"},
+    {"name": "Denver Nuggets", "conference": "West", "division": "Northwest"},
+    {"name": "Utah Jazz", "conference": "West", "division": "Northwest"},
+    {"name": "Boston Celtics", "conference": "East", "division": "Atlantic"},
+    {"name": "Brooklyn Nets", "conference": "East", "division": "Atlantic"},
+    {"name": "Chicago Bulls", "conference": "East", "division": "Central"},
+    {"name": "Milwaukee Bucks", "conference": "East", "division": "Central"}
+  ],
+  "rules": {
+    "same_division_games": 4,
+    "same_conference_games": 3,
+    "cross_conference_games": 2
+  },
+  "constraints": {
+    "season_days": 90,
+    "max_consecutive_away": 2,
+    "max_consecutive_home": 3,
+    "min_rest_days": 1
+  },
+  "optimize": true,
+  "optimizer_iterations": 6000,
+  "cities": {
+    "Golden State Warriors": [37.7680, -122.3877],
+    "Los Angeles Lakers": [34.0430, -118.2673],
+    "Denver Nuggets": [39.7487, -105.0077],
+    "Utah Jazz": [40.7683, -111.9011],
+    "Boston Celtics": [42.3662, -71.0621],
+    "Brooklyn Nets": [40.6826, -73.9754],
+    "Chicago Bulls": [41.8807, -87.6742],
+    "Milwaukee Bucks": [43.0451, -87.9174]
+  }
+}

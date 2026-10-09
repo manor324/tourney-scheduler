@@ -1,0 +1,32 @@
+{
+  "mode": "ipl",
+  "group_a": ["Chennai Super Kings", "Kolkata Knight Riders", "Rajasthan Royals", "Royal Challengers Bengaluru", "Punjab Kings"],
+  "group_b": ["Mumbai Indians", "Sunrisers Hyderabad", "Gujarat Titans", "Delhi Capitals", "Lucknow Super Giants"],
+  "row_pairs": {
+    "Chennai Super Kings": "Mumbai Indians",
+    "Kolkata Knight Riders": "Sunrisers Hyderabad",
+    "Rajasthan Royals": "Gujarat Titans",
+    "Royal Challengers Bengaluru": "Delhi Capitals",
+    "Punjab Kings": "Lucknow Super Giants"
+  },
+  "constraints": {
+    "season_days": 60,
+    "max_consecutive_away": 2,
+    "max_consecutive_home": 3,
+    "min_rest_days": 1
+  },
+  "optimize": true,
+  "optimizer_iterations": 6000,
+  "cities": {
+    "Chennai Super Kings": [13.0827, 80.2707],
+    "Kolkata Knight Riders": [22.5726, 88.3639],
+    "Rajasthan Royals": [26.9124, 75.7873],
+    "Royal Challengers Bengaluru": [12.9716, 77.5946],
+    "Punjab Kings": [30.7046, 76.7179],
+    "Mumbai Indians": [19.0760, 72.8777],
+    "Sunrisers Hyderabad": [17.3850, 78.4867],
+    "Gujarat Titans": [23.0225, 72.5714],
+    "Delhi Capitals": [28.7041, 77.1025],
+    "Lucknow Super Giants": [26.8467, 80.9462]
+  }
+}
